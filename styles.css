@@ -1,0 +1,268 @@
+<styles>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    /* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #111;         
+}
+
+.logo img {
+  width: 40px;   
+  height: auto;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #e5e5e5;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .nav-links a {
+    margin-left: 20px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;   
+    align-items: center;
+  }
+
+  .nav-links {
+    margin-top: 15px;
+  }
+
+  .nav-links a {
+    margin: 0 10px;      
+    font-size: 0.9rem;
+  }
+}
+
+    /* HERO ALANI */
+    .hero {
+      padding: 60px 20px;
+    }
+
+    .hero-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 0 auto;
+      gap: 40px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #e0e0e0;
+    }
+
+    .hero-text h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+      color: #b0b0b0;
+    }
+
+    .hero-text p {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      color: #a0a0a0;
+      max-width: 380px;
+    }
+
+    /* Buton stili */
+.btn {
+  display: inline-flex;            /* ikon ve yazıyı yan yana hizalar */
+  align-items: center;             /* dikey ortalar */
+  gap: 10px;                       /* ikon ile yazı arası boşluk */
+  padding: 10px 18px;
+  background-color: transparent;
+  border: 1px solid #555;          /* gri çerçeve */
+  color: #e0e0e0;                  /* yazı rengi */
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1e1e1e;       /* hover’da koyulaşır */
+  border-color: #e0e0e0;
+}
+
+.btn .icon {
+  width: 18px;                     /* ikon boyutu */
+  height: 18px;
+}
+    /* Profil fotoğrafı */
+    .hero-image img {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #333;
+    }
+
+    /* =========================
+   RESPONSIVE HERO SECTION
+   ========================= */
+
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;    
+    text-align: center;        
+    padding: 60px 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .btn {
+    margin: 0 auto;             
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;            
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .hero-image img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Contact-Section */
+
+
+.contact-section {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #111;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 24px;
+  line-height: 1.5;
+  font-family: 'Manrope', sans-serif;
+  color: #aaa;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-family: 'Manrope', sans-serif;
+ 
+}
+
+.contact-btn:hover {
+  background-color: #666;
+}
+
+
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .contact-section p {
+    font-size: 0.95rem;
+  }
+
+  .contact-btn {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .contact-section p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 24px auto;
+  }
+
+  .contact-btn {
+    font-size: 1.05rem;
+    padding: 14px 28px;
+  }
+}
+
+
+
+  </styles>
+</head>
+<body>
