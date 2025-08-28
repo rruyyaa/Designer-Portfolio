@@ -471,6 +471,71 @@
   }
 }
 
+/* Conslucion-Section */
+.conclusion-section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.conclusion-inner {
+  width: min(900px, 94%);
+  margin: 0 auto;
+}
+
+.conclusion-title {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;   /* İnce */
+  color: #aaa;        /* Gri */
+  text-align: left;   /* Sola hizalı */
+  margin-bottom: 12px;
+}
+
+.conclusion-text {
+  font-size:1rem;
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 36px;
+  max-width: 700px;
+  text-align: left;   /* Sola hizalı */
+}
+
+.conclusion-image img {
+  width: min(760px, 100%);
+  border-radius: 14px;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.55);
+  margin: 0 auto;
+  display: block;
+}
+
+.next-case {
+  margin-top: 28px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #aaa;
+  cursor: pointer;
+  text-align: center;   /* Ortada */
+  transition: color .25s ease;
+}
+
+.next-case:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .conclusion-title { font-size: 1.1rem; }
+  .conclusion-text { font-size: 0.95rem; }
+}
+
+@media (max-width: 768px) {
+  .conclusion-section { padding: 60px 14px; }
+  .conclusion-title { font-size: 1rem; }
+  .conclusion-text { font-size: 0.9rem; }
+}
+
+
 /* Footer-Section */
 .footer {
   background-color: #111;
