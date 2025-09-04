@@ -508,6 +508,38 @@
 }
 
 
+/* Defining-Section */
+.defining-problem {
+  background-color: #111; /* tasarımdaki gibi koyu arka plan */
+  padding: 60px 20px;
+}
+
+.defining-problem .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.problem-subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #999;  /* gri ve ince */
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.problem-text {
+  font-size: 20px;
+  font-weight: 500;  /* daha belirgin */
+  color: #f0f0f0; /* beyaza yakın */
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
 /* Solution-Section */
 .solution {
   padding: 80px 20px;
